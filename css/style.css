@@ -1,0 +1,268 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Code starts here */
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    gap: 15px;
+}
+
+.imgContainer {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.logoContainer {
+    position: absolute;
+    display: flex;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    top: 20vh;
+    gap: 15px;
+}
+
+.logo {
+    padding: 5px 0 5px 0;
+}
+
+.logoText {
+    /* justify-self: center; */
+    align-self: center;
+    font-family: 'Amatic SC', cursive;
+    color: whitesmoke;
+    font-size: 70px;
+}
+
+.photoCredit {
+    font-size: 8px;
+    position: absolute;
+    align-self: flex-end;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 3px;
+}
+
+h1,
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 14px;
+
+}
+
+.formContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.formIntro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    display: block;
+    color: White;
+    font-size: 11px;
+}
+
+label:nth-child(1) {
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px 12px 8px 12px;
+    border: 0;
+    margin: 8px 0 8px 0;
+    box-shadow: 0 0 15px 4px rgba(247, 246, 246, 0.273);
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button[type=submit] {
+    display: block;
+    padding: 10px 12px 10px 12px;
+    background-color: white;
+    border: none;
+    border-radius: 8%;
+}
+
+button[type=submit]:hover {
+    background-color: green;
+}

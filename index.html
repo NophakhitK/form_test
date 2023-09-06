@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@100;400&family=Nunito:wght@200;400&display=swap"
+        rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgContainer">
+            <img class="bgImg"
+                src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1862&q=80"
+                alt="">
+            <div class="logoContainer">
+                <img class="logo"
+                    src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                    alt="">
+                <H1 class="logoText">ODIN</H1>
+            </div>
+            <p class="photoCredit">
+                Photo by <u>Halie West</u> on <u>Unsplash</u>
+            </p>
+        </div>
+        <div class="formContainer">
+            <div class="formIntro">
+                <h1>SIGN UP FOR YOUR DREAMS</h1>
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <form onsubmit="verifyPassword()" action="#" method="post">
+
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" name="first_name">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="last_name">
+
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="number" name="phone_number" id="phone_number">
+
+                <label for="user_password">PASSWORD</label>
+                <input type="password" name="user_password" id="user_password" value="">
+                <span id="message" style="color:red"></span>
+
+                <label for="password_confirm">CONFIRM PASSWORD</label>
+                <input type="password" name="password_confirm" id="password_confirm" value="">
+
+                <button type="submit">CREATE ACCOUNT</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- External JS -->
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
